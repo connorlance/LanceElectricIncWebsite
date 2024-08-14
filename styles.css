@@ -1,0 +1,150 @@
+/* ############################################################ */
+/* #                       MOBILE STYLES                      # */
+/* ############################################################ */
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* ################################### */
+/* #              NAVBAR             # */
+/* ################################### */
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f4f3f2;
+  color: rgb(0, 0, 0);
+}
+
+.brand-title {
+  margin: 0.5rem;
+  margin-left: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5em;
+}
+
+.navbar-links {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: rgb(228, 227, 227);
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-links li {
+  list-style: none;
+  text-align: center;
+}
+
+.navbar-links li a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 0.75rem 1rem;
+  display: block;
+  font-size: 1.35rem;
+}
+
+.navbar-links li a:hover {
+  color: rgb(114, 114, 114);
+}
+
+.navbar-links.active {
+  max-height: 200px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+/* Transform to X */
+.toggle-button.active .bar:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform-origin: center;
+}
+
+.toggle-button.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle-button.active .bar:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform-origin: center;
+}
+
+/* Instantly revert to bars */
+.toggle-button:not(.active) .bar {
+  transition: transform 0s ease;
+}
+
+@media (min-width: 768px) {
+  .toggle-button {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-links {
+    display: flex;
+    max-height: none;
+    width: auto;
+    margin-right: 1rem;
+    background-color: #f4f3f2;
+  }
+
+  .navbar-links ul {
+    flex-direction: row;
+  }
+
+  .navbar-links li {
+    text-align: left;
+  }
+
+  .navbar-links li a {
+    padding: 1rem;
+  }
+}
