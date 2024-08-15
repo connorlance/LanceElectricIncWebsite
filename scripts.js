@@ -38,14 +38,12 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-//Gallary slideshow
+// Gallery slideshow
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.querySelector(".section5-item2-content");
   const slides = document.querySelectorAll(".section5-item2-content .slide");
   const totalSlides = slides.length;
   let currentIndex = 0;
-  const autoSlideIntervalTime = 5000; // 5 seconds
-  let autoSlideInterval;
 
   function updateGallery() {
     const slideWidth = 100 / totalSlides;
@@ -66,14 +64,12 @@ document.addEventListener("DOMContentLoaded", function () {
   function nextSlide() {
     if (currentIndex < totalSlides - 1) {
       goToSlide(currentIndex + 1);
-      resetAutoSlide();
     }
   }
 
   function previousSlide() {
     if (currentIndex > 0) {
       goToSlide(currentIndex - 1);
-      resetAutoSlide();
     }
   }
 
@@ -85,34 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
     prevArrow.disabled = currentIndex === 0;
     nextArrow.disabled = currentIndex === totalSlides - 1;
   }
-
-  function startAutoSlide() {
-    autoSlideInterval = setInterval(nextSlide, autoSlideIntervalTime);
-  }
-
-  function resetAutoSlide() {
-    clearInterval(autoSlideInterval);
-    startAutoSlide();
-  }
-
-  function handleVisibility(entries) {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        startAutoSlide();
-      } else {
-        clearInterval(autoSlideInterval);
-      }
-    });
-  }
-
-  const observer = new IntersectionObserver(handleVisibility, {
-    root: null, // Use the viewport as the root
-    rootMargin: "0px",
-    threshold: 0.1, // Trigger when 10% of the element is visible
-  });
-
-  // Observe the gallery container
-  observer.observe(container);
 
   document.querySelector(".arrow-left").addEventListener("click", previousSlide);
   document.querySelector(".arrow-right").addEventListener("click", nextSlide);
