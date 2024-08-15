@@ -27,6 +27,7 @@
 
     <!-----GOOGLE FONTS ----->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-----CSS----->
     <link rel="stylesheet" href="styles.css" />
@@ -34,13 +35,14 @@
     <title>Lance Electric</title>
   </head>
   <body>
+    <div id="top"></div>
     <!-----HEADER----->
     <header>
       <!-- ############################################################ -->
       <!-- #                         NAV-BAR                          # -->
       <!-- ############################################################ -->
       <nav class="navbar">
-        <div class="brand-title">Lance Electric</div>
+        <a href="#top" class="brand-title">Lance Electric</a>
         <a href="#" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -49,11 +51,11 @@
         <div class="spacer"></div>
         <div class="navbar-links">
           <ul>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Generators</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#generators">Generators</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contactUs">Contact Us</a></li>
           </ul>
         </div>
       </nav>
@@ -69,7 +71,7 @@
       <div class="hero-content">
         <h1>Lance Electric</h1>
         <p>We guarantee the highest quality workmanship in the industry.</p>
-        <p>Over 20 years of experience.</p>
+        <p>Over 25 years of experience.</p>
       </div>
     </div>
 
@@ -77,47 +79,37 @@
     <!-- #                         SECTION                          # -->
     <!-- ############################################################ -->
 
-    <div class="section1">
+    <div id="services" class="section1">
       <div class="section1-item1">
-        <img src="/images/item1.png" alt="IMAGE HERE" />
-        <div class="section1-item1-content">
-          <h1>Electrical Drawings & Plans Review</h1>
-          <p>Our team of skilled professional electricians provides expert service for all electrical projects, from original design to the completion of the project.</p>
+        <div class="section1-title">
+          <h1>Services</h1>
         </div>
+        <img src="/images/item1.png" alt="IMAGE HERE" />
+        <h1>Electrical Drawings & Plans Review</h1>
+        <p>Our team of skilled professional electricians provides expert service for all electrical projects, from original design to the completion of the project.</p>
       </div>
       <div class="section1-item2">
         <img src="/images/item2.png" alt="IMAGE HERE" />
-        <div class="section1-item2-content">
-          <h1>Custom Construction</h1>
-          <p>We are focused on making sure that you receive the help you need without breaking the bank.</p>
-        </div>
+        <h1>Custom Construction</h1>
+        <p>We are focused on making sure that you receive the help you need without breaking the bank.</p>
       </div>
-
       <div class="section1-item3">
         <img src="/images/item3.png" alt="IMAGE HERE" />
-        <div class="section1-item3-content">
-          <h1>Commercial Service Upgrades</h1>
-          <p>
-            Our goal has been to ensure the complete satisfaction of every client, while offering knowledgeable and friendly service at affordable rates. Our hope is that you’ll feel confident in our
-            ability to meet or exceed all of your expectations.
-          </p>
-        </div>
+        <h1>Commercial Service Upgrades</h1>
+        <p>
+          Our goal has been to ensure the complete satisfaction of every client, while offering knowledgeable and friendly service at affordable rates. Our hope is that you’ll feel confident in our
+          ability to meet or exceed all of your expectations.
+        </p>
       </div>
-
       <div class="section1-item4">
         <img src="/images/item4.png" alt="IMAGE HERE" />
-        <div class="section1-item4-content">
-          <h1>New Construction</h1>
-          <p>Our lead technicians have more than 35 years of combined experience in commercial and residential electrical work.</p>
-        </div>
+        <h1>New Construction</h1>
+        <p>Our lead technicians have more than 35 years of combined experience in commercial and residential electrical work.</p>
       </div>
-
       <div class="section1-item5">
         <img src="/images/item5.png" alt="IMAGE HERE" />
-        <div class="section1-item5-content">
-          <h1>Generator Installation & Maintenance</h1>
-          <p>Install new generators and transfer switches and wiring as well as generator servicing and repairs etc. blah blah blah</p>
-        </div>
+        <h1>Generator Installation</h1>
+        <p>Install new generators and transfer switches and wiring as well as generator servicing and repairs etc. blah blah blah</p>
       </div>
     </div>
 
@@ -127,8 +119,8 @@
 
     <div class="section2">
       <div class="section2-item1">
+        <h1>Electrical solutions</h1>
         <div class="section2-item1-content">
-          <h1>Electrical solutions</h1>
           <p>LED Light Installation and Service</p>
           <p>Electrical Inspections</p>
           <p>Emergency and Exit Lighting</p>
@@ -138,8 +130,8 @@
       </div>
 
       <div class="section2-item2">
+        <h1>indoor & outdoor services</h1>
         <div class="section2-item2-content">
-          <h1>indoor & outdoor services</h1>
           <p>Commercial Service Upgrades</p>
           <p>Office expansions and electrical remodeling</p>
           <p>Computer and Communications Cabling</p>
@@ -154,7 +146,7 @@
     <!-- #                         SECTION                          # -->
     <!-- ############################################################ -->
 
-    <div class="section3">
+    <div id="generators" class="section3">
       <div class="section3-item1">
         <div class="section3-item1-content">
           <h1>We are your Authorized Generac Dealer</h1>
@@ -164,39 +156,45 @@
 
       <div class="section3-item2">
         <div class="section3-item2-content">
-          <h1>Authorized Generac Dealer</h1>
-          <p>Whole Home Generators</p>
-          <p>Commercial Generators</p>
-          <p>Partial Home Generators</p>
-          <p>Portable Generators</p>
+          <h1>Installation • Service Warranty</h1>
+          <p>Expert installation, service, and warranty, all handled by trained authorized electrical contractors.</p>
+          <div class="section3-item2-list">
+            <p>• Whole Home Generators</p>
+            <p>• Commercial Generators</p>
+            <p>• Partial Home Generators</p>
+            <p>• Portable Generators</p>
+          </div>
         </div>
       </div>
 
       <div class="section3-item3">
         <div class="section3-item3-content">
-          <h1>Installation • Service Warranty</h1>
-          <p>Expert installation, service, and warranty, all handled by trained authorized electrical contractor.</p>
+          <img src="/images/item8.jpg" alt="IMAGE HERE" />
         </div>
       </div>
 
       <div class="section3-item4">
         <div class="section3-item4-content">
-          <img src="/images/item7.jpg" alt="IMAGE HERE" style="width: 150px; height: auto" />
+          <h1>Financing Available</h1>
+          <p>GET EASY FINANCING WITH OUR CREDIT PARTNER, SYNCHRONY FINANCIAL, on GENERAC GENERATORS ONLY</p>
+          <p>(Not available for Other Electrical Services)</p>
+          <p>0% Monthly Interest for 12 Months</p>
         </div>
       </div>
 
       <div class="section3-item5">
         <div class="section3-item5-content">
-          <h1>Financing Available</h1>
-          <p>GET EASY FINANCING WITH OUR CREDIT PARTNER, SYNCHRONY FINANCIAL, on GENERAC GENERATORS ONLY (Not available for Other Electrical Services)</p>
-          <p>0% Monthly Interest for 12 Months</p>
-          <p>0% Monthly Interest for 12 Months* between 7/1/18 and 12/31/18</p>
-        </div>
-      </div>
-
-      <div class="section3-item6">
-        <div class="section3-item6-content">
-          <img src="/images/item8.jpg" alt="IMAGE HERE" style="width: 150px; height: auto" />
+          <a href="https://www.synchrony.com/marketplace/partner?market=homeimprovement&store=generac" target="_blank" rel="noopener noreferrer">
+            <img src="/images/item7.jpg" alt="IMAGE HERE" />
+          </a>
+          <a
+            href="https://etail.mysynchrony.com/eapply/eapply.action?uniqueId=287888F10090B2C3873347796F2DA7DE169BFA96C73A4429&clientName=Generac&intcmp=NoOff_generac_homeimprovement-generac_body-hero_apply_int&platformtoken=fdfdd98264d36fa84cb406656910259fcedfb35e&orgchannel=SyfMarketing&storeNumber=cmpc"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="apply-now-button"
+          >
+            Apply Now
+          </a>
         </div>
       </div>
     </div>
@@ -205,37 +203,29 @@
     <!-- #                         SECTION                          # -->
     <!-- ############################################################ -->
 
-    <div class="section4">
-      <div class="section4-item1">
-        <div class="section4-item1-content">
-          <h1>Featured Projects</h1>
-        </div>
+    <div id="projects" class="section4">
+      <div class="section4-header">
+        <h1>Featured Projects</h1>
       </div>
 
-      <div class="section4-item2">
-        <div class="section4-item2-content">
+      <div class="section4-gallery">
+        <div class="section4-item">
           <img src="/images/item9.jpg" alt="IMAGE HERE" />
           <p>Extensive preparation for electrical service for the 300-Amp Service</p>
         </div>
 
-        <div class="section4-item3">
-          <div class="section4-item3-content">
-            <img src="/images/item10.jpg" alt="IMAGE HERE" />
-            <p>Crosspointe Christian Academy can lighting service preparation for new construction</p>
-          </div>
+        <div class="section4-item">
+          <img src="/images/item10.jpg" alt="IMAGE HERE" />
+          <p>Crosspointe Christian Academy can lighting service preparation for new construction</p>
         </div>
-      </div>
 
-      <div class="section4-item4">
-        <div class="section4-item4-content">
-          <img src="/images/item9.jpg" alt="IMAGE HERE" />
+        <div class="section4-item">
+          <img src="/images/item11.jpg" alt="IMAGE HERE" />
           <p>Bucket Truck work replacing lamps</p>
         </div>
-      </div>
 
-      <div class="section4-item5">
-        <div class="section4-item5-content">
-          <img src="/images/item9.jpg" alt="IMAGE HERE" />
+        <div class="section4-item">
+          <img src="/images/item12.jpg" alt="IMAGE HERE" />
           <p>3000 Amp Switch Gear</p>
         </div>
       </div>
@@ -245,7 +235,7 @@
     <!-- #                         SECTION                          # -->
     <!-- ############################################################ -->
 
-    <div class="section5">
+    <div id="gallery" class="section5">
       <div class="section5-item1">
         <div class="section5-item1-content">
           <h1>Gallery</h1>
@@ -254,25 +244,35 @@
 
       <div class="section5-item2">
         <div class="section5-item2-content">
-          <img src="/images/g1.jpg" alt="IMAGE HERE" />
-          <img src="/images/g2.jpg" alt="IMAGE HERE" />
-          <img src="/images/g3.jpg" alt="IMAGE HERE" />
-          <img src="/images/g4.jpg" alt="IMAGE HERE" />
-          <img src="/images/g5.jpg" alt="IMAGE HERE" />
-          <img src="/images/g6.jpg" alt="IMAGE HERE" />
-          <img src="/images/g7.jpg" alt="IMAGE HERE" />
-          <img src="/images/g8.jpg" alt="IMAGE HERE" />
-          <img src="/images/g9.jpg" alt="IMAGE HERE" />
-          <img src="/images/g10.jpg" alt="IMAGE HERE" />
+          <!-- Slide 1 -->
+          <div class="slide">
+            <img src="/images/g1.jpg" alt="IMAGE HERE" />
+            <img src="/images/g2.jpg" alt="IMAGE HERE" />
+            <img src="/images/g3.jpg" alt="IMAGE HERE" />
+            <img src="/images/g4.jpg" alt="IMAGE HERE" />
+            <img src="/images/g5.jpg" alt="IMAGE HERE" />
+            <img src="/images/g6.jpg" alt="IMAGE HERE" />
+          </div>
+          <!-- Slide 2 -->
+          <div class="slide">
+            <img src="/images/g7.jpg" alt="IMAGE HERE" />
+            <img src="/images/g8.jpg" alt="IMAGE HERE" />
+            <img src="/images/g9.jpg" alt="IMAGE HERE" />
+            <img src="/images/g10.jpg" alt="IMAGE HERE" />
+            <img src="/images/g11.jfif" alt="IMAGE HERE" />
+            <img src="/images/g12.jfif" alt="IMAGE HERE" />
+          </div>
+          <!-- Add more slides if needed -->
         </div>
+        <button class="arrow arrow-left">&lt;</button>
+        <button class="arrow arrow-right">&gt;</button>
       </div>
     </div>
-
     <!-- ############################################################ -->
     <!-- #                         SECTION                          # -->
     <!-- ############################################################ -->
 
-    <div class="section6">
+    <div id="contactUs" class="section6">
       <div class="section6-item1">
         <div class="section6-item1-content">
           <h1>Get in touch</h1>
