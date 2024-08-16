@@ -185,7 +185,7 @@ body {
 }
 
 .hero-image img {
-  max-width: 10rem;
+  max-width: 15rem;
 }
 
 .hero-content {
@@ -193,7 +193,7 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 .hero-content p {
@@ -376,7 +376,7 @@ body {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
-.apply-now-button {
+.yellow-button {
   display: inline-block;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -393,12 +393,12 @@ body {
   backface-visibility: hidden;
 }
 
-.apply-now-button:hover {
+.yellow-button:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.apply-now-button:active {
+.yellow-button:active {
   transform: scale(1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -557,11 +557,9 @@ body {
 .contactUs-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   padding: 0.5rem;
-  padding-left: 1.5rem;
-  gap: 0.5rem;
 }
 
 .section6-item2,
@@ -597,6 +595,7 @@ body {
 .section6-map {
   width: 100%;
   margin-bottom: 1rem;
+  border: 2px solid #cccccc;
 }
 
 .section6-map iframe {
