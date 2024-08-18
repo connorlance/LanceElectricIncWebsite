@@ -592,7 +592,6 @@ body {
 }
 
 .section5-item1 {
-  width: 100%;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -656,14 +655,19 @@ body {
 }
 
 @media (min-width: 921px) {
-  .section5-item1 {
-    font-size: 2rem;
+  .section5 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 1rem auto;
   }
+
   .section5-item2 {
-    width: 60%;
+    width: 100%;
+    max-width: 100%;
   }
 
   .section5-item2-content {
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
   }
 
