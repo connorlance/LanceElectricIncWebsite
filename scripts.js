@@ -38,25 +38,25 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Gallery slideshow
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.querySelector(".section5-item2-content");
-  const slides = document.querySelectorAll(".section5-item2-content .slide");
-  const totalSlides = slides.length;
+  const slides = document.querySelectorAll(".section5-item2-content .slide img");
+  const totalSlides = document.querySelectorAll(".section5-item2-content .slide").length;
   let currentIndex = 0;
+
+  // Lightbox elements
+  const modal = document.getElementById("lightbox-modal");
+  const modalImg = document.getElementById("lightbox-img");
+  const closeModal = document.querySelector(".close");
 
   function updateGallery() {
     const slideWidth = 100 / totalSlides;
     container.style.transform = `translateX(${-currentIndex * slideWidth}%)`;
-
-    // Update arrow visibility
     updateArrowVisibility();
   }
 
   function goToSlide(index) {
-    // Prevent index from going out of bounds
     if (index >= totalSlides || index < 0) return;
-
     currentIndex = index;
     updateGallery();
   }
@@ -76,14 +76,29 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateArrowVisibility() {
     const prevArrow = document.querySelector(".arrow-left");
     const nextArrow = document.querySelector(".arrow-right");
-
-    // Disable or enable arrows based on the current index
     prevArrow.disabled = currentIndex === 0;
     nextArrow.disabled = currentIndex === totalSlides - 1;
   }
 
+  // Event listeners for gallery arrows
   document.querySelector(".arrow-left").addEventListener("click", previousSlide);
   document.querySelector(".arrow-right").addEventListener("click", nextSlide);
 
   updateGallery(); // Initialize gallery position
+
+  // Lightbox functionality
+  slides.forEach((img) => {
+    img.addEventListener("click", function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    });
+  });
+
+  closeModal.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  modal.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
 });
