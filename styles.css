@@ -215,7 +215,9 @@ body {
 }
 
 .section1-title {
-  margin-bottom: 1rem;
+  margin: 1rem;
+  width: 100%;
+  font-size: 2rem;
 }
 
 .section1 img {
@@ -235,13 +237,33 @@ body {
   line-height: 1.2;
 }
 
-.section1-item1,
-.section1-item2,
-.section1-item3,
-.section1-item4,
-.section1-item5 {
-  margin: 1rem;
-  font-size: 1rem;
+.section1-item {
+  flex: 1;
+  margin: 0 1rem 1rem 1rem;
+  max-width: 350px;
+  min-width: 150px;
+  box-sizing: border-box;
+  align-self: stretch;
+}
+
+.section1-item img {
+  width: 75px;
+}
+
+.section1-item h2 {
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 921px) {
+  .section1-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+  }
 }
 
 /* ################################### */
@@ -256,6 +278,9 @@ body {
   margin: 1rem;
   padding-top: 0.5rem;
   background-color: #f4f3f2;
+  font-size: 1.5rem;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .section2 h1 {
@@ -289,14 +314,17 @@ body {
   align-items: flex-start;
 }
 
-.section2 p:before {
-  content: "• ";
-}
-
 .section2 p {
   text-align: left;
-  padding-left: 3rem;
+  padding-left: 1rem;
   margin: 0;
+}
+
+@media (min-width: 921px) {
+  .section2 {
+    flex-direction: row;
+    align-items: stretch;
+  }
 }
 
 /* ################################### */
@@ -309,6 +337,12 @@ body {
 
 .section3-item1 img {
   width: 90%;
+  height: auto;
+}
+
+.section3-item1 h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .section3-item2 {
@@ -323,6 +357,7 @@ body {
 }
 
 .section3-item2 h1 {
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -335,6 +370,7 @@ body {
 
 .section3-item3 img {
   width: 100%;
+  height: auto;
 }
 
 .section3-item4 {
@@ -348,16 +384,20 @@ body {
   background-color: #f4f3f2;
 }
 
+.section3-item4 h1 {
+  font-size: 2rem;
+}
+
 .section3-item4 p {
   font-size: 1rem;
 }
 
-.section3-item4 {
-  text-align: center;
-  margin: 1rem;
+.section3-item2 img {
+  width: 100%;
+  margin-top: 1rem;
 }
 
-.section3-item5 img {
+.section3-item4 img {
   width: 90%;
   height: auto;
   border: 2px solid #ccc;
@@ -371,7 +411,7 @@ body {
   margin: 0 auto;
 }
 
-.section3-item5 img:hover {
+.section3-item4 img:hover {
   transform: scale(1.01);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
@@ -403,6 +443,69 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+@media (min-width: 921px) {
+  .section3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section3-item1 {
+    margin-bottom: 1rem;
+  }
+
+  .section3-item1 img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+  }
+
+  .section3-item1 h1 {
+    font-size: 3rem;
+  }
+
+  .section3-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 75%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .section3-item2,
+  .section3-item4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .section3-item4 h1 {
+    font-size: 2rem;
+  }
+
+  .section3-item4 img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .yellow-button {
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+  }
+}
 /* ################################### */
 /* #              SECTION 4          # */
 /* ################################### */
@@ -453,6 +556,24 @@ body {
 
 .section4-item p {
   margin: 0.5rem 0 0;
+}
+
+@media (min-width: 921px) {
+  .section4-header {
+    font-size: 2rem;
+  }
+
+  .section4-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .section4-item {
+    flex: 1 1 calc(25% - 1rem);
+    font-size: 1.5rem;
+  }
 }
 
 /* ################################### */
@@ -535,6 +656,20 @@ body {
   right: 10px;
 }
 
+@media (min-width: 921px) {
+  .section5-item2 {
+    width: 62%;
+  }
+
+  .section5-item2-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .slide {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
 /* ################################### */
 /* #              SECTION 6          # */
 /* ################################### */
