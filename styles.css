@@ -212,6 +212,7 @@ body {
   text-align: center;
   margin: 1rem;
   background-color: #f4f3f2;
+  border-radius: 10px;
 }
 
 .section1-title {
@@ -281,6 +282,7 @@ body {
   font-size: 1.5rem;
   padding: 1rem;
   gap: 1rem;
+  border-radius: 10px;
 }
 
 .section2 h1 {
@@ -354,6 +356,7 @@ body {
   margin: 1rem;
   padding: 0.5rem;
   background-color: #f4f3f2;
+  border-radius: 10px;
 }
 
 .section3-item2 h1 {
@@ -382,6 +385,7 @@ body {
   margin: 1rem;
   padding: 0.5rem;
   background-color: #f4f3f2;
+  border-radius: 10px;
 }
 
 .section3-item4 h1 {
@@ -518,6 +522,7 @@ body {
   margin: 1rem;
   padding: 0.5rem 1rem;
   background-color: #f4f3f2;
+  border-radius: 10px;
 }
 
 .section4-header {
@@ -589,6 +594,7 @@ body {
   padding: 0.5rem 1rem;
   background-color: #f4f3f2;
   position: relative;
+  border-radius: 10px;
 }
 
 .section5-item1 {
@@ -598,6 +604,7 @@ body {
 
 .section5-item1-content h1 {
   margin: 0;
+  font-size: 3.5em;
 }
 
 .section5-item2 {
@@ -736,6 +743,7 @@ body {
   margin: 1rem;
   padding: 0.5rem;
   background-color: #f4f3f2;
+  border-radius: 10px;
 }
 
 .section6-item1 {
