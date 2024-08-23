@@ -180,7 +180,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 4rem 2rem 0;
-  background-image: url("/images/hero-background.jpg");
+  background-image: url("/images/hero/hero-4032x3024.jpg");
   background-size: 228%;
   background-repeat: no-repeat;
   background-position: top left calc(-90vw);
@@ -210,6 +210,19 @@ body {
 }
 
 /* Media Queries */
+
+@media (max-width: 1280px) {
+  .hero {
+    background-image: url("/images/hero/hero-1280x960.jpg");
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1920px) {
+  .hero {
+    background-image: url("/images/hero/hero-1920x1440.jpg");
+  }
+}
+
 @media (min-width: 921px) {
   .hero {
     background-position: center calc(-6.5vw);
@@ -225,11 +238,12 @@ body {
     color: yellow;
   }
   .hero-content strong {
-    color: black;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
   }
 }
+
+/* Fallback for browsers without backdrop-filter support */
 @supports not (backdrop-filter: blur(1px)) {
   .hero-content p {
     background: rgba(235, 208, 195, 0.6);
@@ -237,7 +251,6 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   }
 }
-
 /* ################################### */
 /* #              SECTION 1          # */
 /* ################################### */
@@ -261,6 +274,7 @@ body {
 .section1 img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .section1 h1 {
@@ -306,14 +320,12 @@ body {
     text-align: left;
   }
   .section1 img {
-    max-height: 220px;
   }
 }
 
 /* ################################### */
 /* #              SECTION 2          # */
 /* ################################### */
-/* Mobile (default) */
 .section2 {
   display: flex;
   flex-direction: column;
@@ -955,9 +967,9 @@ body {
     max-width: 190px;
   }
   .section6-item6 img {
-    width: 100%; /* Ensures the image scales with the container */
-    max-width: 300px; /* Increase the max-width to make the image larger */
-    height: auto; /* Maintain the aspect ratio */
+    width: 100%;
+    max-width: 300px;
+    height: auto;
   }
 }
 /* ################################### */

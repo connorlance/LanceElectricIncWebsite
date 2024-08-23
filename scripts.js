@@ -132,3 +132,23 @@ document.addEventListener("DOMContentLoaded", function () {
     updateGallery();
   });
 });
+
+// Function to update background image based on screen size
+function updateHeroBackground() {
+  var heroElement = document.querySelector(".hero");
+  var width = window.innerWidth;
+
+  if (width <= 1280) {
+    heroElement.style.backgroundImage = "url('/images/hero/hero-1280x960.jpg')";
+  } else if (width <= 1920) {
+    heroElement.style.backgroundImage = "url('/images/hero/hero-1920x1440.jpg')";
+  } else {
+    heroElement.style.backgroundImage = "url('/images/hero/hero-4032x3024.jpg')";
+  }
+}
+
+// Initialize background image on page load
+window.onload = updateHeroBackground;
+
+// Update background image on window resize
+window.onresize = updateHeroBackground;
