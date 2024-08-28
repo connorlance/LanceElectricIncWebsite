@@ -296,7 +296,7 @@ body {
   margin: 0 1rem 1rem 1rem;
   box-sizing: border-box;
   align-self: stretch;
-  background-position: center calc(-50vh) left calc(-50vw);
+  background-position: calc(50% - 50vw) calc(50% - 50vh);
   border-top: 2px solid #dcdcdc;
   padding-top: 1rem;
 }
