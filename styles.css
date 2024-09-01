@@ -211,6 +211,15 @@ body {
 
 /* Media Queries */
 
+@media (max-width: 405px) {
+  .hero {
+    background-size: 250%;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 1280px) {
   .hero {
     background-image: url("/images/hero/hero-1280x960.jpg");
@@ -955,6 +964,22 @@ body {
   margin-top: 0.5rem;
 }
 
+@media (max-width: 383px) {
+  .contactUs-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section6-item2,
+  .section6-item3,
+  .section6-item4,
+  .section6-item5 {
+    max-width: 100%;
+    flex: 1 1 auto;
+    margin-bottom: 1rem;
+  }
+}
+
 @media (min-width: 921px) {
   .section6-item1 {
     font-size: 2rem;
@@ -972,6 +997,7 @@ body {
     height: auto;
   }
 }
+
 /* ################################### */
 /* #               FOOTER            # */
 /* ################################### */
